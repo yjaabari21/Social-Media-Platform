@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body{
+  color: black;
+  padding: 1rem;
+}
+.card{
+  margin: 12px;
+  padding: 2rem;
+  box-shadow: -1px 2px 20px;
+}
+.userContainer{
+  background-color: dodgerblue;
+    width: 100%;
+    padding: 2rem;
+    margin-right: 2rem;
+    margin-top: -12px;
+    border-radius: 30px;
+}
+.link{
+  font-size: 21px;
+}
+
+.posts{
+  padding: 1rem;
+  background-color: #a5a5a5;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  font-size: 21px;
+}
+#comContainer{
+  box-shadow: -1px 2px 20px;
+  margin: 15px 0;
+}
+#comContainer h3{
+  font-size: 17px;
+  margin-bottom: 5px;
+  font-family: monospace;
+}
+.comment{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.icon{
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 21px;
+  background-color: red;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
